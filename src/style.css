@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.cart-items {
+  position: absolute; 
+  top: 60px; 
+  right: 10px; 
+  background-color: white; 
+  border: 1px solid #ddd; 
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  z-index: 1000; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.cart-items ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-items li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart {
+  cursor: pointer;
+  position: relative;
+}
+
+.cart .badge {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  
+}
+
