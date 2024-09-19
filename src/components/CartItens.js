@@ -23,12 +23,18 @@ const CartItens = ({ cart, cartRef, clearCart }) => {
                 </li>
             ))}
             </ul>
-            <h5>Total: R${cart.reduce((acc, item) => acc + item.price, 0).toFixed(2)}</h5>
-            <Col className="ml-3">
-            <Button variant="danger" onClick={clearCart}>
-                <FaTrashAlt />
-            </Button>
-            </Col>
+            <Row>
+                <Col sm={8}>
+                    <span style={{ fontWeight: 'bold' }}>
+                        Total: R${cart.reduce((acc, item) => acc + item.price, 0).toFixed(2)}
+                    </span>
+                </Col>
+                <Col sm={2}>
+                    <Button variant="danger" onClick={clearCart}>
+                        <FaTrashAlt />
+                    </Button>
+                </Col>
+            </Row>
         </div>
     )
 };
